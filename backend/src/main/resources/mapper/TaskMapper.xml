@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.ai_kanban.domain.mapper.TaskMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.ai_kanban.domain.entity.TaskEntity">
+        <id column="id" property="id" />
+        <result column="column_id" property="columnId" />
+        <result column="title" property="title" />
+        <result column="priority" property="priority" />
+        <result column="assignee_id" property="assigneeId" />
+        <result column="order_num" property="orderNum" />
+        <result column="status" property="status" />
+        <result column="is_deleted" property="isDeleted" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, column_id, title, priority, assignee_id, order_num, status, is_deleted, create_time, update_time
+    </sql>
+
+
+
+</mapper>

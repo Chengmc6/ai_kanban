@@ -1,0 +1,75 @@
+# Python 字节码
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python 包管理
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+wheels/
+*.wheel
+*.manifest
+*.spec
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# IDE / 编辑器
+.idea/              # JetBrains (PyCharm, IntelliJ)
+.vscode/            # VS Code（settings.json 可选提交）
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 日志文件
+*.log
+logs/
+
+# 测试覆盖率
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pytest
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Docker（如果你以后加）
+Dockerfile.*
+.dockerignore
+
+# Mac / Linux 临时文件
+*.tmp
+*.bak

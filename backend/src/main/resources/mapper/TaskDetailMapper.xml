@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.ai_kanban.domain.mapper.TaskDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.ai_kanban.domain.entity.TaskDetailEntity">
+        <id column="task_id" property="taskId" />
+        <result column="content" property="content" />
+        <result column="deadline" property="deadline" />
+        <result column="is_ai_generated" property="isAiGenerated" />
+        <result column="ai_prompt" property="aiPrompt" />
+        <result column="ai_model_info" property="aiModelInfo" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        task_id, content, deadline, is_ai_generated, ai_prompt, ai_model_info, update_time
+    </sql>
+
+</mapper>
